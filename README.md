@@ -60,7 +60,7 @@ https://gyazo.com/b539d4eee723354571b951a0cd0c2599
 
 | Column  | Type      | Options                        |
 | ------  | --------- | ------------------------------ |
-| image   | string    | null: false                    |
+| URL     | text      | null: false                    |
 | text    | text      | null: false                    |
 |question1| text      | null: true                    |
 |question2| text      | null: true                    |
