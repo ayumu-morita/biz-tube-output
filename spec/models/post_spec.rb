@@ -15,22 +15,22 @@ RSpec.describe Post, type: :model do
       it 'ログインしていないとアウトプットできない' do
         @post.user = nil
         @post.valid?
-        expect(@post.errors.full_messages).to include('User must exist')
+        expect(@post.errors.full_messages).to include('ユーザーを入力してください')
       end
       it "テキストがないとアウトプットは保存できない" do
         @post.text = ""
         @post.valid?
-        expect(@post.errors.full_messages).to include("Text can't be blank")
+        expect(@post.errors.full_messages).to include("テキストを入力してください")
       end  
       it "imageがないとアウトプットは保存できない" do
         @post.image = ""
         @post.valid?
-        expect(@post.errors.full_messages).to include("Image can't be blank")
+        expect(@post.errors.full_messages).to include("動画URLを入力してください")
       end   
       it "ユーザーが紐付いていないとアウトプットは保存できない" do
         @post.user = nil
         @post.valid?
-        expect(@post.errors.full_messages).to include("User must exist")
+        expect(@post.errors.full_messages).to include("ユーザーを入力してください")
       end
     end
   end
