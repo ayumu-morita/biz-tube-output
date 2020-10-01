@@ -1,7 +1,6 @@
 <div class="contents row">
   <div class="content_post">
   <p>
-    <strong>Youtube url:</strong>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/<%= @post.image %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </p>
     <% if user_signed_in? && current_user.id == @post.user_id %>
