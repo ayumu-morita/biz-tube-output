@@ -1,5 +1,5 @@
 class Post < ApplicationRecord
-  validates :text, presence: true
+  validates :image, :text, presence: true
   belongs_to :user
   has_many :comments
 
