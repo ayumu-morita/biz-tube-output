@@ -666,7 +666,7 @@ a {
 }
 
 a:hover {
-  color: #57C3E9;
+  color: #634db1;
 }
 
 .bold {
@@ -705,10 +705,10 @@ form input[type="submit"] {
 
 .btn,
 header.header div.header__bar.row div.grid-6 a.post {
-  padding: 8px 20px;
+  padding: 8px 16px;
   font-size: 14px;
-  border: 2px solid #57C3E9;
-  color: #57C3E9;
+  border: 2px solid  #634db1;
+  color:  #634db1;
   font-weight: bold;
   text-align: center;
   border-radius: 3px;
@@ -717,8 +717,8 @@ header.header div.header__bar.row div.grid-6 a.post {
 
 .btn:hover,
 header.header div.header__bar.row div.grid-6 a.post:hover {
-  border-color: #9bdbf2;
-  color: #9bdbf2;
+  border-color: #bc9bf2;
+  color: #bc9bf2;
 }
 
 .title {
@@ -797,7 +797,7 @@ header.header .user_nav span:after {
 }
 
 header.header .user_nav span:hover ul {
-  color: #57C3E9;
+  color:  #634db1;
   display: block;
 }
 
@@ -931,7 +931,7 @@ div.contents.row div.content_post .more ul.more_list li a {
 }
 
 div.contents.row div.content_post .more ul.more_list li a:hover {
-  background-color: #57C3E9;
+  background-color:  #634db1;
   color: #fff;
 }
 
@@ -949,15 +949,15 @@ div.contents.row div.content_post p {
 
 div.contents.row div.content_post span.name {
   position: absolute;
-  right: 30px;
-  bottom: 30px;
+  right: 24px;
+  bottom: 24px;
   z-index: 2;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 div.contents.row div.content_post span.name a {
   display: block;
-  color: #aaa;
+  color: #cfc9c9;
 }
 
 div.contents.row div.content_post span.name a:hover {
@@ -994,7 +994,7 @@ form textarea {
 }
 
 form input[type="submit"] {
-  background-color: #57C3E9;
+  background-color:  #634db1;
   border-radius: 20px;
   color: #fff;
   border: 0;
@@ -1002,7 +1002,7 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-  background-color: #84d3ef;
+  background-color:  #bc9bf2;
 }
 
 .container {
@@ -1027,7 +1027,7 @@ form input[type="submit"]:hover {
 }
 
 .comments a {
-  color: #57C3E9;
+  color:  #634db1;
 }
 
 .comments a:hover {

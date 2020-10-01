@@ -1,0 +1,61 @@
+<div class="contents row">
+  <div class="content_post">
+  <p>
+    <strong>Youtube url:</strong>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/<%= @post.image %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </p>
+    <% if user_signed_in? && current_user.id == @post.user_id %>
+      <div class="more">
+        <span><%= image_tag 'arrow_top.png' %></span>
+        <ul class="more_list">
+          <li>
+            <%= link_to '編集', edit_post_path(@post.id), method: :get %>
+          </li>
+          <li>
+            <%= link_to '削除', post_path(@post.id), method: :delete %>
+          </li>
+        </ul>
+      </div>
+    <% end %>
+    <span class="name">
+      <a href="/users/<%= @post.user.id %>">
+        <span>投稿者</span><%= @post.user.nickname %>
+      </a>
+    </span>
+  </div>
+  <ul>
+    <li>
+      <p><% @post.image %></p>
+    </li>
+    <li>
+      <p>この動画から最も学べたこと：<%= @post.question1 %></p>
+    </li>
+    <li>
+      <p>学んだことを実生活にどう活かすか：<%= @post.question2 %></p>
+    </li>
+    <li>
+      <p>アウトプット：<%= @post.text %></p>
+    </li>
+  </ul>
+  <div class="container">
+    <% if current_user %>
+      <%= form_with(model: [@post, @comment], local: true) do |form| %>
+        <%= form.text_area :text, placeholder: "コメントする", rows: "2" %>
+        <%= form.submit "SEND" %>
+      <% end %>
+    <% else %>
+      <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
+    <% end %>
+    <div class="comments">
+      <h4>＜コメント一覧＞</h4>
+      <% if @comments %>
+        <% @comments.each do |comment| %>
+          <p>
+            <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
+            <%= comment.text %>
+          </p>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
