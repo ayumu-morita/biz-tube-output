@@ -1,0 +1,39 @@
+
+
+<div class="content_post">
+<p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/<%= post.image %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+  <div class="more">
+    <span><%= image_tag 'arrow_top.png' %></span>
+    <ul class="more_list">
+      <li>
+        <%= link_to '詳細', post_path(post.id), method: :get %>
+      </li>
+      <% if user_signed_in? && current_user.id == post.user_id %>
+        <li>
+          <%= link_to '編集', edit_post_path(post.id), method: :get %>
+        </li>
+        <li>
+          <%= link_to '削除', post_path(post.id), method: :delete %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+  <span class="name">
+    <a href="/users/<%= post.user.id %>">
+      <span>投稿者</span><%= post.user.nickname %>
+    </a>
+  </span>
+</div>
+<ul>
+  <li>
+    <p>この動画から最も学べたこと：<%= post.question1 %></p>
+  </li>
+  <li>
+    <p>学んだことを実生活にどう活かすか：<%= post.question2 %></p>
+  </li>
+  <li>
+    <p>アウトプット：<%= post.text %></p>
+  </li>
+</ul>
