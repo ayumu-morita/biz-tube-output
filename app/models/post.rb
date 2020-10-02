@@ -4,7 +4,7 @@ class Post < ApplicationRecord
   has_many :comments
 
   validates :image, :text, presence: true
-  validates :image, format: { with: /\A(https\:\/\/)?(www\.)?(youtube\.com\/watch\?v=|youtu\.be\/)+[\S]{11}\z/, message: 'はYouTubeのURLを入力してください' }
+  validates :image, format: { with: /\A[a-zA-Z0-9]+\z/, message: 'はYouTubeのURLを入力してください' }
 
   def self.search(search)
     if search != ""

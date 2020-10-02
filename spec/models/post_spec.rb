@@ -7,7 +7,7 @@ RSpec.describe Post, type: :model do
 
   describe 'アウトプットの保存' do
     context "アウトプットが保存できる場合" do
-      it "画像とテキストがあればアウトプットは保存される" do
+      it "YouTubeURLとテキストがあればアウトプットは保存される" do
         expect(@post).to be_valid
       end
     end
