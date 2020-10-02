@@ -22,20 +22,22 @@
       </a>
     </span>
   </div>
-  <ul>
-    <li>
-      <p><% @post.image %></p>
-    </li>
-    <li>
-      <p>この動画から最も学べたこと：<%= @post.question1 %></p>
-    </li>
-    <li>
-      <p>学んだことを実生活にどう活かすか：<%= @post.question2 %></p>
-    </li>
-    <li>
-      <p>アウトプット：<%= @post.text %></p>
-    </li>
-  </ul>
+  <div class="my-parts">
+    <div class="my-parts-content">
+    <ul>
+      <li>
+        <p>この動画から最も学べたこと：<%= @post.question1 %></p>
+      </li>
+      <li>
+        <p>学んだことを実生活にどう活かすか：<%= @post.question2 %></p>
+      </li>
+      <li>
+        <p>アウトプット：<%= @post.text %></p>
+      </li>
+    </ul>
+	</div>
+</div>
+
   <div class="container">
     <% if current_user %>
       <%= form_with(model: [@post, @comment], local: true) do |form| %>
