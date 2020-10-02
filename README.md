@@ -2,23 +2,26 @@
 biz-tube-output
 
 # アプリケーション概要
-ビジネス系YouTuberを視聴して学んだことを投稿できるアウトプットサイト
+ビジネス系YouTubeを視聴して学んだことを投稿できるアウトプットサイト
 
 # URL
-https://biztube-output.herokuapp.com/
+https://biz-tube-output.herokuapp.com/
 
 # テスト用アカウント
 ## basic認証
 user = admin
 pass = 2222
-
+## テストユーザー
+email = test@gmail.com
+pass = aaaa1111
 # 利用方法
 ログインしているユーザーが投稿、編集、投稿削除できる。
+ログインしてなくても投稿は見れる
 またログインユーザーは他人の投稿にコメントできる
 
 # 目指した課題解決
 昨今ビジネス系のYouTuberが流行しているが、インプットと同じくらいアウトプットが大事だと考え、アウトプットの場を作りたかった。
-学んだことのアウトプットにより自分の恥肉にすることはもちろん、他人のアウトプットを見て視聴するかどうかなど参考にすることができる。
+学んだことのアウトプットにより自分の血肉にすることはもちろん、他人のアウトプットを見て視聴するかどうかなど参考にすることができる。
 本アプリのペルソナである勉強意欲の高い人たちにとって高め合えるコミュニティにもなると考えている。
 
 # 洗い出した要件
@@ -85,3 +88,19 @@ https://gyazo.com/b539d4eee723354571b951a0cd0c2599
 - belongs_to :post
 
 # ローカルでの動作方法
+Ruby 2.6.5
+rails 6.0.3.3
+
+gem 'pry-rails'
+
+gem 'devise'
+
+gem 'rails-i18n'
+
+bundle installを実行
+
+rails db:create
+
+rails db:migrate
+
+rails sを実行

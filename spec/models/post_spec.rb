@@ -27,6 +27,11 @@ RSpec.describe Post, type: :model do
         @post.valid?
         expect(@post.errors.full_messages).to include("動画URLを入力してください")
       end   
+      it "imageは半角英数字でないと保存できない" do
+        @post.image = "あああああああ"
+        @post.valid?
+        expect(@post.errors.full_messages).to include("動画URLはYouTubeのURLを入力してください")
+      end
       it "ユーザーが紐付いていないとアウトプットは保存できない" do
         @post.user = nil
         @post.valid?
