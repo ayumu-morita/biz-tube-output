@@ -5,7 +5,7 @@ biz-tube-output
 ビジネス系YouTubeを視聴して学んだことを投稿できるアウトプットサイト
 
 # URL
-https://biz-tube-output.herokuapp.com/
+http://54.150.28.195/
 
 # テスト用アカウント
 ## basic認証
@@ -13,6 +13,9 @@ user = admin
 pass = 2222
 ## テストユーザー
 email = test@gmail.com
+pass = aaaa1111
+
+email = abc@gmail.com
 pass = aaaa1111
 # 利用方法
 ログインしているユーザーが投稿、編集、投稿削除できる。
