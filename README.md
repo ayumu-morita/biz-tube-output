@@ -49,7 +49,7 @@ pass = aaaa1111
 
 # データベース設計
 # ER図
-https://gyazo.com/b539d4eee723354571b951a0cd0c2599
+![Untitled_Diagram_drawio_-_diagrams_net_-_Gyazo.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/542843/cbb4867f-2a07-6ccb-e6a9-69f82d21f4c4.png)
 
 # テーブル設計
 
