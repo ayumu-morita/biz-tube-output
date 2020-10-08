@@ -1074,20 +1074,9 @@ footer p {
 	background: #666666;
 	color: #333;
 	padding: .8em;
-	position: relative;
 	border-radius: 8px;
   text-align: left;
   color: white;
-}
-.my-parts .my-parts-content::after {
-	content: "";
-	position: absolute;
-	top: 50%;
-	right: 100%;
-	margin-top: -10px;
-	border: 10px solid transparent;
-	border-right: 10px solid #666666;
-	z-index: 2;
 }
 .my-parts .my-parts-content > :last-child {
 	margin-bottom: 0;

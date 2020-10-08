@@ -2,7 +2,8 @@
   <%= form.text_field :keyword, placeholder: "アウトプットを検索する", class: "search-input" %>
   <%= form.submit "検索", class: "search-btn" %>
 <% end %>
-
+<%# <p class="first-text">学んだことをアウトプットしましょう</p>
+<p class="first-text>人間の脳は想起するときに記憶に強く結びつくと研究で明らかになっています</p> %>
 <div class="contents row">
   <% @posts.each do |post| %>
     <%= render partial: "post", locals: { post: post } %>

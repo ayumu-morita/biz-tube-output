@@ -8,7 +8,7 @@
     <span><%= image_tag 'arrow_top.png' %></span>
     <ul class="more_list">
       <li>
-        <%= link_to '詳細', post_path(post.id), method: :get %>
+        <%= link_to 'コメント', post_path(post.id), method: :get %>
       </li>
       <% if user_signed_in? && current_user.id == post.user_id %>
         <li>
@@ -31,15 +31,16 @@
 <div class="my-parts">
 	<div class="my-parts-content">
 		<ul>
-  <li>
-    <p>この動画から最も学べたこと：<%= post.question1 %></p>
-  </li>
-  <li>
-    <p>学んだことを実生活にどう活かすか：<%= post.question2 %></p>
-  </li>
-  <li>
-    <p>アウトプット：<%= post.text %></p>
-  </li>
-</ul>
+      <li>
+        <p>この動画から最も学べたこと：<br><%= post.question1 %></p>
+      </li>
+      <li>
+        <p>学んだことを実生活にどう活かすか：<br><%= post.question2 %></p>
+      </li>
+      <li>
+        <p>アウトプット：<br><%= post.text %></p>
+      </li>
+    </ul>
 	</div>
 </div>
+
