@@ -11,6 +11,8 @@ https://biz-tube-output.herokuapp.com/
 # テスト用アカウント
 
 ## テストユーザー
+ゲストログイン機能を実装しました。
+
 email = test@gmail.com
 pass = aaaa1111
 
