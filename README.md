@@ -6,11 +6,10 @@ biz-tube-output
 
 # URL
 http://54.150.28.195/
+https://biz-tube-output.herokuapp.com/
 
 # テスト用アカウント
-## basic認証
-user = admin
-pass = 2222
+
 ## テストユーザー
 email = test@gmail.com
 pass = aaaa1111
