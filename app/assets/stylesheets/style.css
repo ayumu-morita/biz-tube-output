@@ -1081,3 +1081,28 @@ footer p {
 .my-parts .my-parts-content > :last-child {
 	margin-bottom: 0;
 }
+
+.btn {
+  display: inline-block;
+  padding: .6em 2em;
+  margin: 0 0 1em;
+  background-image: none;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  box-shadow: 1px 1px 3px 0 rgba(0,0,0,.2);
+  position: relative;
+  margin-left: 30px;
+
+}
+.btn:hover,
+.btn:focus {
+  outline: none;
+}
+.btn::-moz-foucus-inner {
+  padding: 0;
+  border: none;
+}

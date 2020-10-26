@@ -2,7 +2,7 @@
   <p id="comment_<%= comment.id %>">
     <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
     <%= comment.text %>
-    <%= link_to  '削除', post_comment_path(comment.post_id, comment.id), method: :delete, remote: true %>
+    <%= link_to  '削除', post_comment_path(comment.post_id, comment.id), {method: :delete, remote: true, class: "btn"} %>
   </p>
   
 <% end %>
