@@ -5,7 +5,7 @@ biz-tube-output
 ビジネス系YouTubeを視聴して学んだことを投稿できるアウトプットサイト
 
 # URL
-http://54.150.28.195/
+biztube-output.work
 https://biz-tube-output.herokuapp.com/
 
 # テスト用アカウント
