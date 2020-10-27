@@ -8,6 +8,26 @@ biz-tube-output
 biztube-output.work
 https://biz-tube-output.herokuapp.com/
 
+# 使用技術
+## フロントエンド
+- HTML/CSS
+- JavaScript(jQuery)
+## バックエンド
+- Ruby 2.6.5
+- Rails 6.0.3
+## webサーバー
+- Nginx : 1.18.0
+## アプリケーションサーバー
+- （開発環境）Puma : 4.3.3
+- （本番環境）Unicorn : 5.4.1
+## データベース
+- （開発環境）MySQL 5.6.47
+- （本番環境）MariaDB : 5.5.64
+## インフラ
+- AWS (EC2, VPC, Route53)
+- Git, GitHub
+- Capistrano : 3.14.1
+
 # テスト用アカウント
 
 ## テストユーザー
