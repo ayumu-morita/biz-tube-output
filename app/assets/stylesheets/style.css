@@ -760,6 +760,8 @@ header.header div.header__bar.row h1.grid-6 {
 
 header.header div.header__bar.row h1.grid-6 a {
   display: block;
+  font-family: 'Papyrus', sans-serif;
+
 }
 
 header.header div.header__bar.row div.grid-6 {

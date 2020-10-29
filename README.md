@@ -28,6 +28,9 @@ https://biz-tube-output.herokuapp.com/
 - Git, GitHub
 - Capistrano : 3.14.1
 
+## その他
+AWS(Route53, ALB, ACM)を利用したHTTPS接続
+
 # テスト用アカウント
 
 ## テストユーザー
