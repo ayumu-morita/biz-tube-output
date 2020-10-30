@@ -24,12 +24,15 @@ https://biz-tube-output.herokuapp.com/
 - （開発環境）MySQL 5.6.47
 - （本番環境）MariaDB : 5.5.64
 ## インフラ
-- AWS (EC2, VPC, Route53, ACM)
+- AWS (EC2, VPC, Route53, ACM, ELB)
 - Git, GitHub
 - Capistrano : 3.14.1
 
 ## その他
 AWS(Route53, ALB, ACM)を利用したHTTPS接続
+
+# インフラ構成
+![Untitled_Diagram_drawio_-_diagrams_net.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/542843/b6d1e6c4-7320-ee09-2684-a4ef78148b42.png)
 
 # テスト用アカウント
 
