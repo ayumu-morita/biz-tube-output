@@ -1,9 +1,10 @@
 class CommentsController < ApplicationController
 
   def create
+    @post = Post.find(params[:post_id])
     @comment = Comment.new(comment_params)
     @comment.save
-    @comments = Comment.all
+    @comments = @post.comments.includes(:user)
   end
 
   def destroy
