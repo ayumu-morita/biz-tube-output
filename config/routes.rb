@@ -3,7 +3,7 @@ Rails.application.routes.draw do
     registrations: 'users/registrations',
     passwords: 'users/passwords'
   }
-  root to: 'posts#index'
+  root to: 'homes#index'
   resources :posts do
     resources :comments, only: [:create,:destroy]
     collection do

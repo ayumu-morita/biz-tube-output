@@ -1,0 +1,45 @@
+
+<% unless user_signed_in? %>
+  <div class="overview-area">
+    <h1>Biztube-output</h1>
+    <p>隙間時間に効率よく勉強したい方に向けた<br>ビジネスYouTube特化型のアウトプットサービス</p>
+    <div class="search-form-area">
+    </div>
+  </div>
+<% end %>
+
+<% unless user_signed_in? %>
+  <div class="about-service">
+    <h2>Biztube-outputのサービス</h2>
+    <h1>アウトプットと情報共有</h1>
+      <div class="icon-area">
+        <div class="credit-card-icon">
+          <p>〜 検索ツールとして 〜</p>
+          <%= image_tag  "/クレジットカードのアイコン素材.png" %>
+          <%= image_tag  "/スマホアイコン.png" %>
+          <p>クレジットカード/電子マネー/スマートフォン決済<br>キャッシュレス決済に対応しているお店をジャンル問わず、店名やキーワードで検索可能。</p>
+        </div>
+        <div class="icon-area">
+          <div class="comment-icon">
+            <p>〜 SNSとして 〜</p>
+            <%= image_tag  "/コメントのアイコン素材 その2.png" %>
+            <%= image_tag "/人物アイコン　チーム.png" %>
+            <p>ユーザー登録することで、あなたが行ったお店の情報を投稿し<br>ユーザー同士で共有することができます。</p>
+          </div>
+        </div>
+    </div>
+<% end %>
+
+<% unless user_signed_in? %>
+  <div class="invitation">
+    <h1>今すぐアウトプットをはじめてみましょう!</h1>
+    <div class="btn">
+      <div class="signup">
+        <%= link_to "新規登録", new_user_registration_path, class: "post" %>
+      </div>
+      <div class="signin">
+        <%= link_to "ログイン", new_user_session_path, class: "post" %>
+      </div>
+    </div>
+  </div>
+<% end %>
