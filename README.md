@@ -1,5 +1,4 @@
-# アプリケーション名
-biz-tube-output
+# アプリケーション
 ![BizTubeOutput.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/542843/db1c2dd3-7729-84bb-a8b0-f377c924ba4c.png)
 
 # アプリケーション概要
