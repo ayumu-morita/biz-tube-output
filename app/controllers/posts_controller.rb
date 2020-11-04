@@ -20,7 +20,7 @@ class PostsController < ApplicationController
 
     if @post.valid?
       @post.save
-      redirect_to root_path
+      redirect_to posts_path
     else
       render 'new'
     end
