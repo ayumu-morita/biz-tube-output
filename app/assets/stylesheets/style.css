@@ -1114,7 +1114,7 @@ footer p {
 .overview-area {
   height: 600px;
   text-align: center;
-  background-image: url("top.jpg");
+  background-image: url(/app/assets/images/top.jpg);
   background-size: cover;
 }
 
