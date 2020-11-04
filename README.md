@@ -1,6 +1,6 @@
 # アプリケーション名
 biz-tube-output
-https://gyazo.com/68f7163bf185b9cdc3517d36e6e71eb4
+![BizTubeOutput.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/542843/db1c2dd3-7729-84bb-a8b0-f377c924ba4c.png)
 
 # アプリケーション概要
 ビジネス系YouTubeを視聴して学んだことを投稿できるアウトプットサイト
