@@ -1130,3 +1130,102 @@ footer p {
   font-size: 25px;
   color: whitesmoke;
 }
+
+.about-service {
+  height: auto;
+  text-align: center;
+  background-color: #5A527C;
+  flex-direction: column;
+}
+
+.about-service h2 {
+  color: #fff;
+  font-size: 24px;
+  padding: 20px 0 0 0;
+}
+
+.about-service h1 {
+  font-size: 22px;
+  padding: 10px 0 0 0;
+  color: #fff;
+}
+
+.about-service p {
+  padding: 30px 0 30px 0;
+  color: #d6d5da;
+  font-size: 18px;
+  margin: 0;
+  font-family: "Source Han Serif", "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+}
+
+.invitation {
+  height: 350px;
+  background-color: #cbc9d2;
+}
+
+.btn-top {
+  display: flex;
+  justify-content: center;
+}
+
+.about-service .border-line {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1em;
+  font-family: "Source Han Serif", "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+  margin-top: 42px;
+  color: #fff;
+}
+.about-service .border-line:before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  display: inline-block;
+  width: 120px;
+  height: 2px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.invitation h1 {
+  text-align: center;
+  padding: 70px 0 70px 0;
+  color: black;
+  font-size: 26px;
+  font-weight: normal;
+}
+
+.btn-top {
+  display: flex;
+  justify-content: center;
+}
+
+.signup a {
+  text-decoration: none;
+  color: #634db1;
+  font-size: 20px;
+}
+
+.btn-signup {
+  width: 200px;
+  height: 56px;
+  border: 2px solid #634db1;
+  border-radius: 3px;
+}
+
+.signin a {
+  text-decoration: none;
+  color: #634db1;
+  font-size: 20px;
+}
+
+.btn-signin {
+  width: 200px;
+  height: 56px;
+  margin: 0 10px 20px 30px;
+  border: 2px solid #634db1;
+  border-radius: 3px;
+}

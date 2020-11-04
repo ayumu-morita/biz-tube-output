@@ -1,7 +1,7 @@
 <%= form_with(model: @post, local: true) do |form| %>
-  <%= form.text_field :image, placeholder: "動画Url" %>
+  <%= form.text_field :image, placeholder: "【YouTube動画】共有URLを貼ってください" %>
   <%= form.text_field :question1, placeholder: "Q. この動画から最も学べたことはなんですか？" %>
   <%= form.text_field :question2, placeholder: "Q. 学んだことを実生活にどのように活かしていこうと思いますか？" %>
-  <%= form.text_area :text, placeholder: "アウトプットをご自由にご記入ください", rows: "10" %>
+  <%= form.text_area :text, placeholder: "アウトプットを記入して知識を自分のモノにしましょう！", rows: "10" %>
   <%= form.submit "SEND" %>
 <% end %>

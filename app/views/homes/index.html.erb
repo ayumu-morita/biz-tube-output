@@ -10,35 +10,24 @@
 
 <% unless user_signed_in? %>
   <div class="about-service">
-    <h2>Biztube-outputのサービス</h2>
-    <h1>アウトプットと情報共有</h1>
-      <div class="icon-area">
-        <div class="credit-card-icon">
-          <p>〜 検索ツールとして 〜</p>
-          <%= image_tag  "/クレジットカードのアイコン素材.png" %>
-          <%= image_tag  "/スマホアイコン.png" %>
-          <p>クレジットカード/電子マネー/スマートフォン決済<br>キャッシュレス決済に対応しているお店をジャンル問わず、店名やキーワードで検索可能。</p>
-        </div>
-        <div class="icon-area">
-          <div class="comment-icon">
-            <p>〜 SNSとして 〜</p>
-            <%= image_tag  "/コメントのアイコン素材 その2.png" %>
-            <%= image_tag "/人物アイコン　チーム.png" %>
-            <p>ユーザー登録することで、あなたが行ったお店の情報を投稿し<br>ユーザー同士で共有することができます。</p>
-          </div>
-        </div>
-    </div>
+    <h1>Biztube-outputのサービス</h1>
+    <h2>アウトプットと情報共有コミュニティ</h2>
+    <h2 class="border-line">なぜアウトプットをするのか?</h2>
+    <p>「インプットが3に対してアウトプットが7」。<br>これが記憶をもっとも効率化する比率だと脳科学の研究で明らかになっています。</p>
+    <p>昨今のYouTubeの流行により隙間時間にも気軽に学ぶ環境が増えました。<br>それなのに、「なかなか勉強の成果が出ない」「記憶に残らない」と感じている人も多いのではないでしょうか。</p>
+    <p>せっかく学んだ知識を"自分のモノ"にしてみませんか？</p>
+  </div>
 <% end %>
 
 <% unless user_signed_in? %>
   <div class="invitation">
-    <h1>今すぐアウトプットをはじめてみましょう!</h1>
-    <div class="btn">
+    <h1>今すぐアウトプットをはじめましょう!</h1>
+    <div class="btn-top">
       <div class="signup">
-        <%= link_to "新規登録", new_user_registration_path, class: "post" %>
+        <%= link_to "新規登録", new_user_registration_path, class: "btn btn-signup" %>
       </div>
       <div class="signin">
-        <%= link_to "ログイン", new_user_session_path, class: "post" %>
+        <%= link_to "ログイン", new_user_session_path, class: "btn btn-signin" %>
       </div>
     </div>
   </div>
